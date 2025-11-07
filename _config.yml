@@ -14,8 +14,8 @@ title: Justin's Portfolio # This is what shows up in the tab of the browser
 # Hero Section
 name: Justin Alcuizar
 headline: CITCS - 1C
-About Me
 description: >- # dont remove this line. this will ignore all new lines until the next section
+  About Me.
   I am an ambitious 18-year-old first-year Computer Science student at the University of the Cordilleras. I possess a profound passion for the field and am driven to master and thrive across Programming, Game Development, Web Development, and Computer Science as a whole. My personal growth accelerates in settings that champion creativity, autonomy, and self-expression.
 
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
