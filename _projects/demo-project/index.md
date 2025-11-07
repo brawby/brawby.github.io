@@ -9,7 +9,7 @@ skills:
   - Videos 
   - Models, Designs and Animation
 
-main-image: /project2.jpg
+main-image: /turned-gray-laptop-computer.jpg
 ---
 
 ---
