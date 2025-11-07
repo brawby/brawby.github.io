@@ -54,7 +54,13 @@ skills:
     - Adobe Animate
     - Moho
     - SketchUp 
-  - category: Slot for future skills I might learn
+  - category: Robotics
+    tools:
+    - Arduino
+    - PiCar-s/Raspberry Pi
+    - Lego Mindstorms
+    - Robotis
+  - category: More skills to hone and develop in the future
     tools:
     - Slot
     - Slot
