@@ -1,5 +1,5 @@
 ---
-layout: default          # If your other pages use a different layout, copy that name.
+layout: post          # If your other pages use a different layout, copy that name.
 title: Education
 permalink: /education/
 description: Academic background
