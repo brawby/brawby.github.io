@@ -35,7 +35,7 @@ description: My Academic Background
       </p>
       <p class="education-detail">
         Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
-        Award: Consistent Honour Graduate.
+        Award: Consistent Honour Graduate. TEST NO. 2
       </p>
     </div>
 
