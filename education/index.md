@@ -6,39 +6,42 @@ description: My Academic Background
 ---
 
 <section id="education" class="education-section">
-  <h1>Education Attainment Timeline</h1>
+  <h2>Education</h2>
 
   <div class="education-grid">
-    <!-- University (Edit with your real info) -->
     <div class="education-card">
-      <h2>University of the Cordilleras (Ongoing)</h2>
-      <p class="education-meta">Bachelor of Science in Computer Science · 2025 - Present</p>
-      <ul class="education-detail">
-        <li>Focus areas: Programming, Game Development, Web Development, Core Computer Science.</li>
-        <li>Key coursework: (List a few you want to highlight)</li>
-        <li>Activities: (e.g. Programming Society, Game Dev Club)</li>
-        <li>Goals: Strengthen code knowledge, Expand portfolio</li>
-      </ul>
+      <div class="card-image">
+        <img src="{{ '/assets/images/education/cordilleras.jpg' | relative_url }}" alt="University of the Cordilleras">
+      </div>
+      <h3>University of the Cordilleras (Ongoing)</h3>
+      <p class="education-meta">Bachelor of Science in Computer Science — 2025 — Present</p>
+      <p class="education-detail">
+        Focus areas: Programming, Game Development, Web Development, Core Computer Science.
+        Key coursework: (List a few you want to highlight)
+      </p>
     </div>
 
-    <!-- Senior High School -->
-    <div class="education-card">
-      <h2>St. John's Academy Inc.</h2>
-      <p class="education-meta">Secondary Education STEM Strand · 2022 – 2024</p>
-      <ul class="education-detail">
-        <li>Capstone / notable project: HYACOAL: Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes as Sustainable Solid Fuel</li>
-        <li>Award / recognition: Consistent Honour Graduate, Grade 7 - Grade 12</li>
-      </ul>
+  <div class="education-card">
+      <div class="card-image">
+        <img src="{{ '/assets/images/education/st-johns.jpg' | relative_url }}" alt="St. John's Academy Inc.">
+      </div>
+      <h3>St. John's Academy Inc.</h3>
+      <p class="education-meta">Secondary Education STEM Strand — 2022 — 2024</p>
+      <p class="education-detail">
+        Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
+        Award: Consistent Honour Graduate.
+      </p>
     </div>
 
-    <!-- Optional certifications / courses -->
-    <div class="education-card">
-      <h2>Holy Family Centre of Studies</h2>
+  <div class="education-card">
+      <div class="card-image">
+        <img src="{{ '/assets/images/education/holy-family.jpg' | relative_url }}" alt="Holy Family Centre of Studies">
+      </div>
+      <h3>Holy Family Centre of Studies</h3>
       <p class="education-meta">Primary Education</p>
-      <ul class="education-detail">
-        <li>[Platform / Course] – [Topic] – [Year]</li>
-        <li>[Platform / Course] – [Topic] – [Year]</li>
-      </ul>
+      <p class="education-detail">
+        [Platform / Course] — [Topic] — [Year]
+      </p>
     </div>
   </div>
 </section>
