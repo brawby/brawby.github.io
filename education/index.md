@@ -11,7 +11,7 @@ description: My Academic Background
   <div class="education-grid">
     <div class="education-card">
       <div class="card-image">
-        <img src="{{ '/assets/images/education/cordilleras.jpg' | relative_url }}" alt="University of the Cordilleras">
+        <img src="{{ '/assets/images/education/cordilleras.jpg' }}" alt="University of the Cordilleras">
       </div>
       <h3>University of the Cordilleras (Ongoing)</h3>
       <p class="education-meta">
