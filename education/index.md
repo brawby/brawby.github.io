@@ -14,7 +14,10 @@ description: My Academic Background
         <img src="{{ '/assets/images/education/cordilleras.jpg' | relative_url }}" alt="University of the Cordilleras">
       </div>
       <h3>University of the Cordilleras (Ongoing)</h3>
-      <p class="education-meta">Bachelor of Science in Computer Science — 2025 — Present</p>
+      <p class="education-meta">
+        Bachelor of Science in Computer Science
+        2025 — Present
+      </p>
       <p class="education-detail">
         Focus areas: Programming, Game Development, Web Development, Core Computer Science.
         Key coursework: (List a few you want to highlight)
@@ -26,7 +29,10 @@ description: My Academic Background
         <img src="{{ '/assets/images/education/st-johns.jpg' | relative_url }}" alt="St. John's Academy Inc.">
       </div>
       <h3>St. John's Academy Inc.</h3>
-      <p class="education-meta">Secondary Education STEM Strand — 2022 — 2024</p>
+      <p class="education-meta">
+        Secondary Education STEM Strand
+        2022 — 2024
+      </p>
       <p class="education-detail">
         Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
         Award: Consistent Honour Graduate.
