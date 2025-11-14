@@ -20,7 +20,7 @@ description: My Academic Background
       </p>
       <p class="education-detail">
         Focus areas: Programming, Game Development, Web Development, Core Computer Science.
-        Key coursework: (List a few you want to highlight)
+        Key coursework: (List a few you want to highlight) TESTTTT
       </p>
     </div>
 
