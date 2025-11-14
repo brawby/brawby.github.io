@@ -1,3 +1,10 @@
+---
+layout: post          # If your other pages use a different layout, copy that name.
+title: Educational Attainment
+permalink: /education/
+description: My Academic Background
+---
+
 <section id="education" class="education-section">
   <h2>Education</h2>
 
