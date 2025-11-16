@@ -15,10 +15,10 @@ description: My Academic Background
         <img src="/assets/images/education/cordilleras.jpg" alt="University of the Cordilleras">
       </div>
       <h3>University of the Cordilleras (Ongoing)</h3>
-      <p class="education-meta">Bachelor of Science in Computer Science — 2025 — Present</p>
+      <p class="education-meta">Bachelor of Science in Computer Science<br>2025 — Present</p>
       <p class="education-detail">
-        Focus areas: Programming, Game Development, Web Development, Core Computer Science.
-        Key coursework: (List a few you want to highlight) TEST W.
+        Governor Pack Road, Baguio City, Benguet
+        <br>IN PROGRESS.
       </p>
     </div>
 
@@ -28,25 +28,23 @@ description: My Academic Background
         <img src="/assets/images/education/st-johns.jpg" alt="St. John's Academy Inc.">
       </div>
       <h3>St. John's Academy Inc.</h3>
-      <p class="education-meta">Secondary Education STEM Strand — 2022 — 2024</p>
+      <p class="education-meta">Secondary Education, Junior and Senior High School - STEM Strand<br>2019 — 2025</p>
       <p class="education-detail">
-        Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
-        Award: Consistent Honour Graduate.
+        Rizal St., Dinalupihan, Bataan - Mabini Proper, Dinalupihan, Bataan
+        <br>Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
+        <br>Award: Consistent Honour Graduate.
+        <br>TechnoKids Robotics Competition - 1st Runner-up
       </p>
     </div>
 
   <div class="education-card">
-      <div class="card-image">
-        <!-- NOTE: this file doesn't exist yet. Either upload it OR temporarily point to an existing image to verify layout -->
-        <!-- Option A (after you upload holy-family.jpg): -->
-        <!-- <img src="/assets/images/education/holy-family.jpg" alt="Holy Family Centre of Studies"> -->
-        <!-- Option B (temporary, to test): -->
         <img src="/assets/images/education/holy-family.jpg" alt="Holy Family Centre of Studies">
       </div>
       <h3>Holy Family Centre of Studies</h3>
-      <p class="education-meta">Primary Education</p>
+      <p class="education-meta">Primary Education<br>2013 - 2019</p>
       <p class="education-detail">
-        [Platform / Course] — [Topic] — [Year]
+        Consistent 1st Honour Graduate
+        <br>Multilinguistic and Mathematical Awardee
       </p>
     </div>
   </div>
