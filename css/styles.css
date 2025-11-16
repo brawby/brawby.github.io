@@ -1,21 +1,21 @@
-.education-card .card-image {
-  height: 40px;
+.education-image {
+  height: 40px; /* Base */
 }
 
-@media (min-width: 1024px) {
-  .education-card .card-image {
-    height: 47px;
+@media (min-width: 768px) {
+  .education-image {
+    height: 47px; /* Desktop */
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .education-card .card-image {
-    height: 28px;
+@media (min-width: 576px) and (max-width: 767px) {
+  .education-image {
+    height: 28px; /* Laptop */
   }
 }
 
-@media (max-width: 767px) {
-  .education-card .card-image {
-    height: 50px;
+@media (max-width: 575px) {
+  .education-image {
+    height: 50px; /* Mobile */
   }
 }
