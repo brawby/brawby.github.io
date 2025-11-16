@@ -41,7 +41,7 @@ description: My Academic Background
         <!-- Option A (after you upload holy-family.jpg): -->
         <!-- <img src="/assets/images/education/holy-family.jpg" alt="Holy Family Centre of Studies"> -->
         <!-- Option B (temporary, to test): -->
-        <img src="/assets/images/education/cordilleras.jpg" alt="Holy Family Centre of Studies">
+        <img src="/assets/images/education/holy-family.jpg" alt="Holy Family Centre of Studies">
       </div>
       <h3>Holy Family Centre of Studies</h3>
       <p class="education-meta">Primary Education</p>
