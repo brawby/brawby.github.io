@@ -1,5 +1,5 @@
 ---
-layout: aboutme          # If your other pages use a different layout, copy that name.
+layout: wrapper          # If your other pages use a different layout, copy that name.
 title: Educational Attainment
 permalink: /education/
 description: My Academic Background
