@@ -951,6 +951,9 @@ footer p {
 .education-section {
   margin-bottom: 50px;
   display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .education-section h1 {
@@ -965,8 +968,9 @@ footer p {
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  width: 100%;
 }
 
 /* Education cards use post-view structure */
@@ -974,6 +978,10 @@ footer p {
   margin: 0;
   padding: 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .education-card.post-view:hover {
@@ -983,6 +991,8 @@ footer p {
 
 .education-card .summary {
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .education-card .card-image {
@@ -992,6 +1002,8 @@ footer p {
   background: #f6f7f6;
   border-radius: 10px 10px 0 0;
   margin: 0;
+  flex-shrink: 0;
+  position: relative;
 }
 
 .education-card .card-image img {
@@ -1001,10 +1013,15 @@ footer p {
   display: block;
   border-radius: 10px 10px 0 0;
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .education-card .title-header {
   padding: 15px 20px 0 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .education-card .title-header h3 {
@@ -1018,6 +1035,9 @@ footer p {
 .education-card .content {
   padding: 0 20px 20px 20px;
   border-radius: 0;
+  width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
 
 .education-meta {
@@ -1032,6 +1052,12 @@ footer p {
   color: var(--text-color);
   line-height: 1.6;
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
 @media (max-width: 768px) {
