@@ -22,7 +22,7 @@ description: My Academic Background
       </div>
     </div>
 
-    <div class="post-view education-card">
+  <div class="post-view education-card">
       <div class="summary">
         <div class="card-image">
           <img src="/assets/images/education/st-johns.jpg" alt="St. John's Academy Inc.">
@@ -41,7 +41,7 @@ description: My Academic Background
       </div>
     </div>
 
-    <div class="post-view education-card">
+  <div class="post-view education-card">
       <div class="summary">
         <div class="card-image">
           <img src="/assets/images/education/holy-family.jpg" alt="Holy Family Centre of Studies">
