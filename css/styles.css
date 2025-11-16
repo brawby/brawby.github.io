@@ -969,6 +969,14 @@ footer p {
   gap: 20px;
 }
 
+/* Larger cards for desktop screens */
+@media (min-width: 1200px) {
+  .education-grid {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 25px;
+  }
+}
+
 /* Education cards use post-view structure */
 .education-card.post-view {
   margin: 0;
