@@ -1,5 +1,5 @@
 ---
-layout: simple-post
+layout: simple-post # If your other pages use a different layout, copy that name.
 title: Educational Attainment
 permalink: /education/
 description: My Academic Background
