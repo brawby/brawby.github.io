@@ -1,4 +1,30 @@
-.education-card { overflow: hidden; }
-.card-image { width:100%; height:140px; overflow:hidden; background:#f6f7f6; }
-.card-image img { width:100%; height:100%; object-fit:cover; display:block; }
-@media (max-width:480px){ .card-image{ height:110px; } }
+/* Education card image overrides */
+.education-card { 
+  overflow: hidden; 
+}
+
+.card-image { 
+  width: 100%; 
+  height: 280px; 
+  overflow: hidden; 
+  background: #f6f7f6; 
+}
+
+.card-image img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+
+@media (max-width: 768px) { 
+  .card-image { 
+    height: 220px; 
+  } 
+}
+
+@media (max-width: 480px) { 
+  .card-image { 
+    height: 180px; 
+  } 
+}
