@@ -1,5 +1,5 @@
 ---
-layout: post          # If your other pages use a different layout, copy that name.
+layout: aboutme          # If your other pages use a different layout, copy that name.
 title: Educational Attainment
 permalink: /education/
 description: My Academic Background
@@ -15,10 +15,9 @@ description: My Academic Background
         <img src="/assets/images/education/cordilleras.jpg" alt="University of the Cordilleras">
       </div>
       <h3>University of the Cordilleras (Ongoing)</h3>
-      <p class="education-meta">Bachelor of Science in Computer Science<br>2025 — Present</p>
+      <p class="education-meta">B.S. in Computer Science<br>2025 — Present</p>
       <p class="education-detail">
-        Governor Pack Road, Baguio City, Benguet
-        <br>IN PROGRESS.
+        IN PROGRESS.
       </p>
     </div>
 
@@ -28,10 +27,9 @@ description: My Academic Background
         <img src="/assets/images/education/st-johns.jpg" alt="St. John's Academy Inc.">
       </div>
       <h3>St. John's Academy Inc.</h3>
-      <p class="education-meta">Secondary Education, Junior and Senior High School - STEM Strand<br>2019 — 2025</p>
+      <p class="education-meta">Secondary Education, Junior and Senior High School<br>STEM Strand<br>2019 — 2025</p>
       <p class="education-detail">
-        Rizal St., Dinalupihan, Bataan - Mabini Proper, Dinalupihan, Bataan
-        <br>Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
+        Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
         <br>Award: Consistent Honour Graduate.
         <br>TechnoKids Robotics Competition - 1st Runner-up
       </p>
