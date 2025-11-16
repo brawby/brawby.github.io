@@ -949,13 +949,13 @@ footer p {
 
 /* ==================== Education Page Styles ==================== */
 .education-section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: block;
 }
 
 .education-section h1 {
   font-size: 42px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .education-section h2 {
@@ -966,7 +966,7 @@ footer p {
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Education cards use post-view structure */
@@ -987,7 +987,7 @@ footer p {
 
 .education-card .card-image {
   width: 100%;
-  height: 280px;
+  height: 200px;
   overflow: hidden;
   background: #f6f7f6;
   border-radius: 10px 10px 0 0;
@@ -1004,11 +1004,11 @@ footer p {
 }
 
 .education-card .title-header {
-  padding: 20px 25px 0 25px;
+  padding: 15px 20px 0 20px;
 }
 
 .education-card .title-header h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   color: var(--text-color);
   font-weight: 600;
@@ -1016,34 +1016,34 @@ footer p {
 }
 
 .education-card .content {
-  padding: 0 25px 25px 25px;
+  padding: 0 20px 20px 20px;
   border-radius: 0;
 }
 
 .education-meta {
-  font-size: 15px;
+  font-size: 14px;
   color: #6b7280;
-  margin: 12px 0 10px 0;
-  line-height: 1.5;
+  margin: 10px 0 8px 0;
+  line-height: 1.4;
 }
 
 .education-detail {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--text-color);
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
 }
 
 @media (max-width: 768px) {
   .education-grid {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
   }
   .education-section h1 {
     font-size: 34px;
   }
-  .education-card .card-image {
-    height: 220px;
+  .education-section {
+    margin-bottom: 60px;
   }
 }
 
@@ -1052,12 +1052,6 @@ footer p {
     grid-template-columns: 1fr;
   }
   .education-card .card-image {
-    height: 180px;
-  }
-  .education-card .title-header {
-    padding: 15px 20px 0 20px;
-  }
-  .education-card .content {
-    padding: 0 20px 20px 20px;
+    height: 160px;
   }
 }
