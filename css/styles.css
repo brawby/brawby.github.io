@@ -1,21 +1,200 @@
-.education-image {
-  height: 40px; /* Base */
+/* ==================== Education Page Styles ==================== */
+.education-section {
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 160px); /* Account for navbar and margins */
+  overflow: hidden;
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-  .education-image {
-    height: 47px; /* Desktop */
+.education-section h1 {
+  font-size: calc(20px + 1vw);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Education cards use post-view structure */
+.education-card.post-view {
+  margin: 0;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 220px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.education-card.post-view:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px -1px rgba(0, 0, 0, 0.12);
+}
+
+.education-card .summary {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.education-card .card-image {
+  width: 100%;
+  height: 80px; /* Changed: 2/3 of original 120px */
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.education-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.education-card .title-header h3 {
+  font-size: calc(12px + 0.5vw);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.education-card .content {
+  padding: 0 15px 15px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.education-card .education-meta {
+  font-size: calc(10px + 0.3vw);
+  margin-bottom: 8px;
+  line-height: 1.3;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.education-card .education-detail {
+  font-size: calc(9px + 0.3vw);
+  line-height: 1.4;
+  color: var(--text-color);
+  opacity: 0.8;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Desktop optimizations */
+@media (min-width: 1920px) {
+  .education-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .education-card .card-image {
+    height: 140px; /* Keep original desktop size */
+  }
+  
+  .education-card .title-header h3 {
+    font-size: 18px;
+  }
+  
+  .education-card .education-meta {
+    font-size: 14px;
+  }
+  
+  .education-card .education-detail {
+    font-size: 13px;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  .education-image {
-    height: 28px; /* Laptop */
+/* Laptop optimizations */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .education-section {
+    height: calc(100vh - 140px);
+    padding: 15px 0;
+  }
+  
+  .education-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .education-card.post-view {
+    max-height: calc(100vh - 180px);
+  }
+  
+  .education-card .card-image {
+    height: 57px; /* Changed: 2/3 of original 85px */
+    margin-bottom: 8px;
+  }
+  
+  .education-card .summary {
+    padding: 10px;
+  }
+  
+  .education-card .content {
+    padding: 0 10px 10px;
+  }
+  
+  .education-card .title-header h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: 1.15;
+  }
+  
+  .education-card .education-meta {
+    font-size: 11px;
+    margin-bottom: 5px;
+    line-height: 1.25;
+  }
+  
+  .education-card .education-detail {
+    font-size: 10px;
+    line-height: 1.35;
+    -webkit-line-clamp: 2;
   }
 }
 
-@media (max-width: 575px) {
-  .education-image {
-    height: 50px; /* Mobile */
+/* Smaller laptop screens */
+@media (max-width: 1199px) {
+  .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    height: auto;
+    padding: 10px 0;
+  }
+  
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .education-card.post-view {
+    max-height: none;
+  }
+  
+  .education-card .card-image {
+    height: 100px; /* Changed: 2/3 of original 150px */
   }
 }
