@@ -30,6 +30,13 @@
   } 
 }
 
+/* Desktop screens */
+@media (min-width: 1920px) {
+  .card-image { 
+    height: 140px; 
+  } 
+}
+
 @media (max-width: 768px) { 
   .card-image { 
     height: 140px; 
