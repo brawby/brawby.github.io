@@ -32,10 +32,9 @@ description: My Academic Background
         </div>
       </div>
       <div class="content">
-        <p class="education-meta">Secondary Education, Junior and Senior High School<br>STEM Strand<br>2019 — 2025</p>
+        <p class="education-meta">Secondary Education, Junior and Senior High School - STEM Strand<br>2019 — 2025</p>
         <p class="education-detail">
-          Capstone: HYACOAL — Examining the Effect of Molasses on the Efficiency of Water Hyacinth-Based Charcoal Briquettes.
-          <br>Consistent Honour Graduate.
+          Consistent Honour Graduate.
           <br>TechnoKids Robotics Competition - 1st Runner-up
         </p>
       </div>
