@@ -1406,7 +1406,7 @@ footer p {
   }
   
   .achievements-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   
@@ -1416,5 +1416,13 @@ footer p {
   
   .achievements-card .card-image {
     height: 150px;
+  }
+}
+
+/* Only stack vertically on very small mobile screens */
+@media (max-width: 480px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
