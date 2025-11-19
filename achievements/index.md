@@ -13,31 +13,34 @@ description: My Notable Achievements
           <img src="/assets/images/achievements/achievement1.jpg" alt="Achievement 1">
         </div>
         <div class="title-header">
-          <h3>Academic Excellence</h3>
+          <h3>Academic Achievements</h3>
         </div>
       </div>
       <div class="content">
-        <ul class="achievements-list">
-          <li>Consistent Honour Graduate throughout high school</li>
-          <li>1st Honour Graduate in Primary Education</li>
-          <li>Multilinguistic and Mathematical Awardee</li>
+        <ul class="achievements-list">`
+          <li>Recipient of the prestigious **Multilinguistic and Mathematical Award**.</li>
+          <li>**Technokids Robotics National Competition 1st Runner Up**.</li>
+          <li>**Honors Graduate** throughout Secondary School.</li>
+          <li>Successfully completed and presented a Sustainable **Grade 12 Research Capstone** project.</li>
+          <li>1st Honor Student throughout Primary School.</li>
+</ul>
         </ul>
       </div>
     </div>
 
-    <div class="post-view achievements-card">
+  <div class="post-view achievements-card">
       <div class="summary">
         <div class="card-image">
           <img src="/assets/images/achievements/achievement2.jpg" alt="Achievement 2">
         </div>
         <div class="title-header">
-          <h3>Competition Success</h3>
+          <h3>Extracurricular Achievements</h3>
         </div>
       </div>
       <div class="content">
         <ul class="achievements-list">
-          <li>TechnoKids Robotics Competition - 1st Runner-up</li>
-          <li>Research Project: HYACOAL - Water Hyacinth-Based Charcoal Briquettes</li>
+          <li>**Six-year Secondary School Rubik's Cube Champion** (e.g., *2019-2024*).</li>
+          <li>Intramurals 2025 **Volleyball Champion**.</li>
         </ul>
       </div>
     </div>
