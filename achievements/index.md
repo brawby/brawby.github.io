@@ -10,7 +10,7 @@ description: My Notable Achievements
     <div class="achievements-card post-view">
       <div class="summary">
         <div class="title-header">
-          <h3><b>Academic Achievements</b></h3>
+          <h3><big><b>Academic Achievements</b></big></h3>
         </div>
       </div>
       <div class="content">
@@ -27,12 +27,12 @@ description: My Notable Achievements
   <div class="achievements-card post-view">
       <div class="summary">
         <div class="title-header">
-          <h3><b>Extracurricular Achievements</b></h3>
+          <h3><big><b>Extracurricular Achievements</b></big></h3>
         </div>
       </div>
       <div class="content">
         <ul class="achievements-list">
-          <li><u>Six-year Secondary School Rubik's Cube Champion</u> (e.g., *2019-2024*).</li>
+          <li><u>Six-year Secondary School Rubik's Cube Champion</u> (<u>2019-2024</u>).</li>
           <li>Intramurals 2025 <u>Volleyball Champion</u>.</li>
         </ul>
       </div>
