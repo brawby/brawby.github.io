@@ -9,9 +9,6 @@ description: My Notable Achievements
   <div class="achievements-grid">
     <div class="achievements-card post-view">
       <div class="summary">
-        <div class="card-image">
-          <img src="/assets/images/achievements/achievement1.jpg" alt="Achievement 1">
-        </div>
         <div class="title-header">
           <h3>Academic Achievements</h3>
         </div>
@@ -29,9 +26,6 @@ description: My Notable Achievements
 
     <div class="achievements-card post-view">
       <div class="summary">
-        <div class="card-image">
-          <img src="/assets/images/achievements/achievement2.jpg" alt="Achievement 2">
-        </div>
         <div class="title-header">
           <h3>Extracurricular Achievements</h3>
         </div>
