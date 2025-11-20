@@ -10,30 +10,30 @@ description: My Notable Achievements
     <div class="achievements-card post-view">
       <div class="summary">
         <div class="title-header">
-          <h3>Academic Achievements</h3>
+          <h3><b>Academic Achievements</b></h3>
         </div>
       </div>
       <div class="content">
         <ul class="achievements-list">
-          <li>Recipient of the prestigious **Multilinguistic and Mathematical Award**.</li>
-          <li>**Technokids Robotics National Competition 1st Runner Up**.</li>
-          <li>**Honors Graduate** throughout Secondary School.</li>
-          <li>Successfully completed and presented a Sustainable **Grade 12 Research Capstone** project.</li>
+          <li>Recipient of the prestigious <u>Multilinguistic and Mathematical Award</u>.</li>
+          <li><u>Technokids Robotics National Competition 1st Runner Up</u>.</li>
+          <li><u>Honors Graduate</u> throughout Secondary School.</li>
+          <li>Successfully completed and presented a Sustainable <u>Grade 12 Research Capstone</u> project.</li>
           <li>1st Honor Student throughout Primary School.</li>
         </ul>
       </div>
     </div>
 
-    <div class="achievements-card post-view">
+  <div class="achievements-card post-view">
       <div class="summary">
         <div class="title-header">
-          <h3>Extracurricular Achievements</h3>
+          <h3><b>Extracurricular Achievements</b></h3>
         </div>
       </div>
       <div class="content">
         <ul class="achievements-list">
-          <li>**Six-year Secondary School Rubik's Cube Champion** (e.g., *2019-2024*).</li>
-          <li>Intramurals 2025 **Volleyball Champion**.</li>
+          <li><u>Six-year Secondary School Rubik's Cube Champion</u> (e.g., *2019-2024*).</li>
+          <li>Intramurals 2025 <u>Volleyball Champion</u>.</li>
         </ul>
       </div>
     </div>
