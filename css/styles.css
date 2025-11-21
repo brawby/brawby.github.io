@@ -27,6 +27,8 @@ body {
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
+    overflow: hidden;   /* removes scrollbars + disables scroll */
+    height: 100%;       /* prevents extra page height from forcing scroll */
 }
 
 a {
@@ -1391,3 +1393,5 @@ footer p {
     gap: 10px;
   }
 }
+
+    
