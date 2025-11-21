@@ -1,0 +1,23 @@
+/* Aggressive no-scroll styles (used with JS lock) */
+html, body {
+  height: 100%;
+}
+
+/* Class used to mark elements we lock.
+   JS will also set inline styles on <body> to fix position at current scroll. */
+.no-scroll-fixed {
+  overflow: hidden !important;
+  height: 100% !important;
+  /* Do not set position fixed in CSS because we need to set top to preserve scroll position via JS */
+}
+
+/* Hide scrollbar visuals just in case */
+* {
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
