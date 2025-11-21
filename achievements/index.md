@@ -10,7 +10,7 @@ description: My Notable Achievements
     <div class="achievements-card post-view">
       <div class="summary">
         <div class="title-header">
-          <h3><big><b>Academic Achievements</b></big></h3>
+          <h3><big><b>Academic/Cocurricular Achievements</b></big></h3>
         </div>
       </div>
       <div class="content">
@@ -18,7 +18,7 @@ description: My Notable Achievements
           <li>Recipient of the prestigious <u>Multilinguistic and Mathematical Award</u>.</li>
           <li><u>Technokids Robotics National Competition 1st Runner Up</u>.</li>
           <li><u>Honors Graduate</u> throughout Secondary School.</li>
-          <li>Successfully completed and presented a Sustainable <u>Grade 12 Research Capstone</u> project.</li>
+          <li>Successfully completed and presented a <u>Quad-Sustainable Development Goal</u> oriented <u>Grade 12 Research Capstone</u> project.</li>
           <li>1st Honor Student throughout Primary School.</li>
         </ul>
       </div>
