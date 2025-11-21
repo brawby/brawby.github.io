@@ -1,5 +1,5 @@
 html, body { height: 100%; }
 .no-scroll { overflow: hidden !important; height: 100% !important; }
-/* hide scrollbar visuals for elements that still might scroll */
-* { scrollbar-width: none; -ms-overflow-style: none; }
-::-webkit-scrollbar { width: 0; height: 0; background: transparent; }
+/* hide scrollbar visuals */
+html, body { scrollbar-width: none; -ms-overflow-style: none; }
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0; height: 0; background: transparent; }
