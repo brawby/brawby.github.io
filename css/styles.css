@@ -18,7 +18,9 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    overflow: hidden;
+    height: 100vh;
 }
 
 body {
@@ -27,6 +29,8 @@ body {
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
 }
 
 a {
