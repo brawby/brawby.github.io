@@ -1394,4 +1394,66 @@ footer p {
   }
 }
 
-    
+/* Page Navigation - Previous/Next arrows (fixed position) */
+.page-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 100;
+  padding: 0 10px;
+}
+
+.page-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  background: var(--background-color);
+  pointer-events: auto;
+  opacity: 0.7;
+}
+
+.page-nav-btn:hover {
+  border-color: var(--link-color);
+  color: var(--link-color);
+  opacity: 1;
+}
+
+.page-nav-btn i {
+  font-size: 16px;
+}
+
+.page-nav-prev {
+  margin-right: auto;
+}
+
+.page-nav-next {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .page-nav {
+    padding: 0 5px;
+  }
+  
+  .page-nav-btn {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .page-nav-btn i {
+    font-size: 14px;
+  }
+}
+
