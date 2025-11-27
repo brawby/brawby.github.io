@@ -10,14 +10,13 @@ description: My Family
     <div class="post-view education-card">
       <div class="summary">
         <div class="card-image">
-          <img src="/assets/images/education/cordilleras.jpg" alt="TO BE FILLED">
+          <img src="/assets/images/education/mum.jpg" alt="Mum">
         </div>
         <div class="title-header">
-          <h3>TO BE FILLED</h3>
+          <h3>My Mother</h3>
         </div>
       </div>
       <div class="content">
-        <p class="education-meta">TO BE FILLED</p>
         <p class="education-detail">TO BE FILLED</p>
       </div>
     </div>
@@ -25,14 +24,13 @@ description: My Family
   <div class="post-view education-card">
       <div class="summary">
         <div class="card-image">
-          <img src="/assets/images/education/st-johns.jpg" alt="TO BE FILLED">
+          <img src="/assets/images/education/dad.jpg" alt="Dad">
         </div>
         <div class="title-header">
-          <h3>TO BE FILLED</h3>
+          <h3>My Father</h3>
         </div>
       </div>
       <div class="content">
-        <p class="education-meta">TO BE FILLED</p>
         <p class="education-detail">TO BE FILLED</p>
       </div>
     </div>
@@ -40,14 +38,13 @@ description: My Family
   <div class="post-view education-card">
       <div class="summary">
         <div class="card-image">
-          <img src="/assets/images/education/holy-family.jpg" alt="TO BE FILLED">
+          <img src="/assets/images/education/bro.jpg" alt="Bro">
         </div>
         <div class="title-header">
-          <h3>TO BE FILLED</h3>
+          <h3>My Brother</h3>
         </div>
       </div>
       <div class="content">
-        <p class="education-meta">TO BE FILLED</p>
         <p class="education-detail">TO BE FILLED</p>
       </div>
     </div>
