@@ -1452,6 +1452,62 @@ footer p {
 }
 
 
+/* Education Page - Images similar to my-family but slightly shorter */
+#education .card-image {
+  height: 210px !important;
+  min-height: 210px !important;
+}
+
+#education .card-image img {
+  height: 100% !important;
+  min-height: 210px !important;
+  object-fit: cover !important;
+}
+
+@media (min-width: 1920px) {
+  #education .card-image {
+    height: 250px !important;
+    min-height: 250px !important;
+  }
+  
+  #education .card-image img {
+    min-height: 250px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  #education .card-image {
+    height: 180px !important;
+    min-height: 180px !important;
+  }
+  
+  #education .card-image img {
+    min-height: 180px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #education .card-image {
+    height: 260px !important;
+    min-height: 260px !important;
+  }
+  
+  #education .card-image img {
+    min-height: 260px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #education .card-image {
+    height: 210px !important;
+    min-height: 210px !important;
+  }
+  
+  #education .card-image img {
+    min-height: 210px !important;
+  }
+}
+
 /* My Family Page - Taller Images (twice as tall as education cards) */
 #my-family .card-image {
   height: 240px !important;
