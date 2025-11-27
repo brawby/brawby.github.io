@@ -1459,3 +1459,20 @@ footer p {
   }
 }
 
+
+/* My Family Page - Taller Images */
+#my-family .card-image {
+  height: 200px;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  #my-family .card-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  #my-family .card-image {
+    height: 180px;
+  }
+}
