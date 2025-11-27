@@ -1,6 +1,6 @@
 {% comment %}
 Page Navigation - Previous and Next buttons
-Navigation order: Home → Education → Achievements → My Family → Projects → (loops back to Home)
+Navigation order: Home → Education → Achievements → My Family → My Batch → (loops back to Home)
 Resume is excluded from navigation
 {% endcomment %}
 
@@ -9,14 +9,14 @@ Resume is excluded from navigation
 {% assign nav_pages = nav_pages | push: "/education/" %}
 {% assign nav_pages = nav_pages | push: "/achievements/" %}
 {% assign nav_pages = nav_pages | push: "/my-family/" %}
-{% assign nav_pages = nav_pages | push: "/projects/" %}
+{% assign nav_pages = nav_pages | push: "/my-batch/" %}
 
 {% assign nav_names = "" | split: "," %}
 {% assign nav_names = nav_names | push: "Home" %}
 {% assign nav_names = nav_names | push: "Education" %}
 {% assign nav_names = nav_names | push: "Achievements" %}
 {% assign nav_names = nav_names | push: "My Family" %}
-{% assign nav_names = nav_names | push: "Projects" %}
+{% assign nav_names = nav_names | push: "My Batch" %}
 
 {% assign current_url = page.url %}
 {% if current_url == nil or current_url == "" %}
