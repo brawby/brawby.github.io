@@ -1460,19 +1460,36 @@ footer p {
 }
 
 
-/* My Family Page - Taller Images */
+/* My Family Page - Taller Images (twice as tall as education cards) */
+#my-family .education-card .card-image,
 #my-family .card-image {
-  height: 200px;
+  height: 360px !important;
+}
+
+@media (min-width: 1920px) {
+  #my-family .education-card .card-image,
+  #my-family .card-image {
+    height: 280px !important;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
+  #my-family .education-card .card-image,
   #my-family .card-image {
-    height: 180px;
+    height: 244px !important;
   }
 }
 
 @media (max-width: 768px) {
+  #my-family .education-card .card-image,
   #my-family .card-image {
-    height: 180px;
+    height: 404px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #my-family .education-card .card-image,
+  #my-family .card-image {
+    height: 346px !important;
   }
 }
