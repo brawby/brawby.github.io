@@ -2,28 +2,29 @@
 .my-batch-section {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 160px);
-  padding: 20px 0;
-  overflow: hidden;
+  height: calc(100vh - 120px);
+  padding: 10px 0;
+  overflow: visible;
 }
 
 .batch-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100%;
-  gap: 40px;
-  padding: 20px;
+  gap: 20px;
+  padding: 10px;
 }
 
 .batch-names-left,
 .batch-names-right {
   flex: 1;
-  max-width: 250px;
+  max-width: 220px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  justify-content: flex-start;
+  height: auto;
+  overflow-y: auto;
 }
 
 .batch-names-left {
@@ -43,11 +44,12 @@
 
 .batch-names-left .names-list li,
 .batch-names-right .names-list li {
-  font-size: calc(12px + 0.4vw);
+  font-size: 11px;
   color: var(--text-color);
-  padding: 8px 0;
+  padding: 3px 0;
   border-bottom: 1px solid var(--border-color);
   transition: color 0.2s ease;
+  line-height: 1.3;
 }
 
 .batch-names-left .names-list li:last-child,
@@ -79,28 +81,28 @@
 /* My Batch Responsive Styles */
 @media (min-width: 1920px) {
   .batch-container {
-    gap: 60px;
+    gap: 40px;
   }
   
   .batch-names-left,
   .batch-names-right {
-    max-width: 300px;
+    max-width: 280px;
   }
   
   .batch-image-center {
-    max-width: 600px;
+    max-width: 500px;
   }
   
   .batch-names-left .names-list li,
   .batch-names-right .names-list li {
-    font-size: 16px;
-    padding: 10px 0;
+    font-size: 13px;
+    padding: 4px 0;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
   .batch-container {
-    gap: 30px;
+    gap: 25px;
   }
   
   .batch-names-left,
@@ -109,13 +111,19 @@
   }
   
   .batch-image-center {
-    max-width: 450px;
+    max-width: 400px;
+  }
+  
+  .batch-names-left .names-list li,
+  .batch-names-right .names-list li {
+    font-size: 11px;
+    padding: 3px 0;
   }
 }
 
 @media (max-width: 1199px) {
   .batch-container {
-    gap: 25px;
+    gap: 20px;
   }
   
   .batch-names-left,
@@ -124,19 +132,25 @@
   }
   
   .batch-image-center {
-    max-width: 350px;
+    max-width: 300px;
+  }
+  
+  .batch-names-left .names-list li,
+  .batch-names-right .names-list li {
+    font-size: 10px;
+    padding: 2px 0;
   }
 }
 
 @media (max-width: 768px) {
   .my-batch-section {
     height: auto;
-    padding: 15px 0;
+    padding: 10px 0;
   }
   
   .batch-container {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     padding: 10px;
   }
   
@@ -152,16 +166,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
   }
   
   .batch-names-left .names-list li,
   .batch-names-right .names-list li {
     border-bottom: none;
-    padding: 6px 12px;
+    padding: 4px 8px;
     background-color: var(--light-background-color);
-    border-radius: 20px;
-    font-size: 14px;
+    border-radius: 15px;
+    font-size: 10px;
   }
   
   .batch-image-center {
@@ -170,18 +184,18 @@
   }
   
   .batch-image-center img {
-    max-height: 40vh;
+    max-height: 35vh;
   }
 }
 
 @media (max-width: 480px) {
   .batch-names-left .names-list li,
   .batch-names-right .names-list li {
-    font-size: 12px;
-    padding: 5px 10px;
+    font-size: 9px;
+    padding: 3px 6px;
   }
   
   .batch-image-center img {
-    max-height: 35vh;
+    max-height: 30vh;
   }
 }
