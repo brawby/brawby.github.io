@@ -1,0 +1,38 @@
+---
+layout: wrapper
+---
+
+<div class="my-batch-section">
+    <div class="batch-container">
+        <!-- Left Names List -->
+        <div class="batch-names-left">
+            {% if page.left_names %}
+                <ul class="names-list">
+                    {% for name in page.left_names %}
+                        <li>{{ name }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        
+        <!-- Center Image -->
+        <div class="batch-image-center">
+            {% if page.batch_image %}
+                <img src="{{ page.batch_image }}" alt="{{ page.batch_image_alt | default: 'My Batch' }}">
+            {% endif %}
+        </div>
+        
+        <!-- Right Names List -->
+        <div class="batch-names-right">
+            {% if page.right_names %}
+                <ul class="names-list">
+                    {% for name in page.right_names %}
+                        <li>{{ name }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    
+    {{ content }}
+</div>
