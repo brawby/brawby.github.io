@@ -49,12 +49,10 @@ Resume is excluded from navigation
   {% assign next_name = nav_names[next_index] %}
 
   <nav class="page-nav">
-    <a href="{{ prev_url }}" class="page-nav-btn page-nav-prev">
+    <a href="{{ prev_url }}" class="page-nav-btn page-nav-prev" aria-label="Previous: {{ prev_name }}">
       <i class="fa-solid fa-chevron-left"></i>
-      <span>{{ prev_name }}</span>
     </a>
-    <a href="{{ next_url }}" class="page-nav-btn page-nav-next">
-      <span>{{ next_name }}</span>
+    <a href="{{ next_url }}" class="page-nav-btn page-nav-next" aria-label="Next: {{ next_name }}">
       <i class="fa-solid fa-chevron-right"></i>
     </a>
   </nav>

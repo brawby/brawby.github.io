@@ -1394,41 +1394,44 @@ footer p {
   }
 }
 
-/* Page Navigation - Previous/Next buttons */
+/* Page Navigation - Previous/Next arrows (fixed position) */
 .page-nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  margin-top: 20px;
-  gap: 20px;
+  pointer-events: none;
+  z-index: 100;
+  padding: 0 10px;
 }
 
 .page-nav-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   color: var(--text-color);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 50%;
   text-decoration: none;
-  font-size: 14px;
   transition: all 0.2s ease;
-  background: transparent;
+  background: var(--background-color);
+  pointer-events: auto;
+  opacity: 0.7;
 }
 
 .page-nav-btn:hover {
   border-color: var(--link-color);
   color: var(--link-color);
+  opacity: 1;
 }
 
 .page-nav-btn i {
-  font-size: 12px;
-}
-
-.page-nav-btn span {
-  color: inherit;
+  font-size: 16px;
 }
 
 .page-nav-prev {
@@ -1439,14 +1442,14 @@ footer p {
   margin-left: auto;
 }
 
-@media (max-width: 480px) {
-  .page-nav-btn {
-    padding: 8px 12px;
-    font-size: 12px;
+@media (max-width: 768px) {
+  .page-nav {
+    padding: 0 5px;
   }
   
-  .page-nav-btn span {
-    display: none;
+  .page-nav-btn {
+    width: 32px;
+    height: 32px;
   }
   
   .page-nav-btn i {
