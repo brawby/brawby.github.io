@@ -17,7 +17,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
-        <p class="education-detail">TO BE FILLED</p>
+        <p class="education-detail">The woman who has taught me how to live.</p>
       </div>
     </div>
 
@@ -31,7 +31,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
-        <p class="education-detail">TO BE FILLED</p>
+        <p class="education-detail">The man who has taught me the intricacies of life.</p>
       </div>
     </div>
 
@@ -45,7 +45,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
-        <p class="education-detail">TO BE FILLED</p>
+        <p class="education-detail">My first friend, The friend who had taught me how to build Arlecchino.<br> </p>
       </div>
     </div>
   </div>
