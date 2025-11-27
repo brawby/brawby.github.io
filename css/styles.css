@@ -1394,4 +1394,63 @@ footer p {
   }
 }
 
-    
+/* Page Navigation - Previous/Next buttons */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.page-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.page-nav-btn:hover {
+  border-color: var(--link-color);
+  color: var(--link-color);
+}
+
+.page-nav-btn i {
+  font-size: 12px;
+}
+
+.page-nav-btn span {
+  color: inherit;
+}
+
+.page-nav-prev {
+  margin-right: auto;
+}
+
+.page-nav-next {
+  margin-left: auto;
+}
+
+@media (max-width: 480px) {
+  .page-nav-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .page-nav-btn span {
+    display: none;
+  }
+  
+  .page-nav-btn i {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,61 @@
+{% comment %}
+Page Navigation - Previous and Next buttons
+Navigation order: Home → Education → Achievements → My Family → Projects → (loops back to Home)
+Resume is excluded from navigation
+{% endcomment %}
+
+{% assign nav_pages = "" | split: "," %}
+{% assign nav_pages = nav_pages | push: "/" %}
+{% assign nav_pages = nav_pages | push: "/education/" %}
+{% assign nav_pages = nav_pages | push: "/achievements/" %}
+{% assign nav_pages = nav_pages | push: "/my-family/" %}
+{% assign nav_pages = nav_pages | push: "/projects/" %}
+
+{% assign nav_names = "" | split: "," %}
+{% assign nav_names = nav_names | push: "Home" %}
+{% assign nav_names = nav_names | push: "Education" %}
+{% assign nav_names = nav_names | push: "Achievements" %}
+{% assign nav_names = nav_names | push: "My Family" %}
+{% assign nav_names = nav_names | push: "Projects" %}
+
+{% assign current_url = page.url %}
+{% if current_url == nil or current_url == "" %}
+  {% assign current_url = "/" %}
+{% endif %}
+
+{% assign current_index = -1 %}
+{% for nav_page in nav_pages %}
+  {% if nav_page == current_url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index >= 0 %}
+  {% assign nav_count = nav_pages.size %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+  
+  {% if prev_index < 0 %}
+    {% assign prev_index = nav_count | minus: 1 %}
+  {% endif %}
+  
+  {% if next_index >= nav_count %}
+    {% assign next_index = 0 %}
+  {% endif %}
+
+  {% assign prev_url = nav_pages[prev_index] %}
+  {% assign prev_name = nav_names[prev_index] %}
+  {% assign next_url = nav_pages[next_index] %}
+  {% assign next_name = nav_names[next_index] %}
+
+  <nav class="page-nav">
+    <a href="{{ prev_url }}" class="page-nav-btn page-nav-prev">
+      <i class="fa-solid fa-chevron-left"></i>
+      <span>{{ prev_name }}</span>
+    </a>
+    <a href="{{ next_url }}" class="page-nav-btn page-nav-next">
+      <span>{{ next_name }}</span>
+      <i class="fa-solid fa-chevron-right"></i>
+    </a>
+  </nav>
+{% endif %}
