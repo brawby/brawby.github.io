@@ -74,7 +74,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
-        <p class="education-detail">">Mark Gio G. Alcuizar - My first friend, The friend who had taught me how to build Arlecchino.<br> </p>
+        <p class="education-detail">Mark Gio G. Alcuizar - My first friend, The friend who had taught me how to build Arlecchino.</p>
       </div>
     </div>
   </div>
