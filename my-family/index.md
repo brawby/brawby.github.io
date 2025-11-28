@@ -46,6 +46,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
+                <p class="education-meta">Gemma G. Alcuizar</p>
         <p class="education-detail">My home, The woman who has taught me how to live.</p>
       </div>
     </div>
@@ -60,6 +61,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
+        <p class="education-meta">Herminio G. Alcuizar Jr.</p>
         <p class="education-detail">My compass, The man who has taught me the intricacies of life.</p>
       </div>
     </div>
@@ -74,6 +76,7 @@ description: My Family
         </div>
       </div>
       <div class="content">
+        <p class="education-meta">Mark Gio G. Alcuizar</p>
         <p class="education-detail">My first friend, The friend who had taught me how to build Arlecchino.<br> </p>
       </div>
     </div>
