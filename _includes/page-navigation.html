@@ -53,13 +53,13 @@ Resume is excluded from navigation
       <span class="page-nav-btn">
         <i class="fa-solid fa-chevron-left"></i>
       </span>
-      <span class="page-nav-label">Previous</span>
+      <span class="page-nav-label">{{ prev_name }}</span>
     </a>
     <a href="{{ next_url }}" class="page-nav-link page-nav-next" aria-label="Next: {{ next_name }}">
       <span class="page-nav-btn">
         <i class="fa-solid fa-chevron-right"></i>
       </span>
-      <span class="page-nav-label">Next</span>
+      <span class="page-nav-label">{{ next_name }}</span>
     </a>
   </nav>
 {% endif %}

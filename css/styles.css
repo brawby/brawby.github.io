@@ -146,13 +146,12 @@ nav .mobile-nav {
     display: none;
 }
 
-/* Page Navigation - Previous/Next arrows (fixed position) */
+/* Page Navigation - Previous/Next arrows (fixed position at bottom) */
 nav.page-nav {
   position: fixed;
-  top: 50%;
+  bottom: 20px;
   left: 0;
   right: 0;
-  transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   pointer-events: none;
