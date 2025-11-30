@@ -258,23 +258,23 @@ nav.page-nav {
 }
 
 .hero-section .text h2 {
-    font-size: 50px;
+    font-size: 100px;
 }
 
 .hero-section .text .external-links i {
-    font-size: 20px;
+    font-size: 40px;
     padding: 0 5px;
     color: var(--text-color);
 }
 
 .hero-section .text h3 {
-    font-size: 18px;
+    font-size: 36px;
     color: var(--text-color);
 }
 
 .hero-section .text p {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 30px;
     padding: 0px;
     color: var(--text-color);
 }
@@ -840,7 +840,7 @@ footer p {
     }
 
     .hero-section .text h2 {
-        font-size: 35px;
+        font-size: 70px;
     }
     
 
@@ -918,11 +918,11 @@ footer p {
     .hero-section .group .text h2 {
         flex-direction: column-reverse;
         display: flex;
-        font-size: 40px;   
+        font-size: 80px;   
       }
     
     .hero-section .group .text h2 .external-links i {
-        font-size: 16px; /* Example: reducing icon size */
+        font-size: 32px; /* Example: reducing icon size */
         margin: 0
     }
 
@@ -991,7 +991,7 @@ footer p {
         padding: 0 20px
     }
     .hero-section .text h2 {
-        font-size: 30px
+        font-size: 60px
     }
 
     .hero-section .text .links a {
