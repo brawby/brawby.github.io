@@ -257,29 +257,24 @@ nav.page-nav {
     flex: 5;
 }
 
-.hero-section .text h2,
-.hero-section .group .text h2 {
-    font-size: 100px !important;
+.hero-section .text h2 {
+    font-size: 50px;
 }
 
-.hero-section .text .external-links i,
-.hero-section .group .text .external-links i,
-.hero-section .group .text h2 i {
-    font-size: 40px !important;
+.hero-section .text .external-links i {
+    font-size: 20px;
     padding: 0 5px;
     color: var(--text-color);
 }
 
-.hero-section .text h3,
-.hero-section .group .text h3 {
-    font-size: 36px !important;
+.hero-section .text h3 {
+    font-size: 18px;
     color: var(--text-color);
 }
 
-.hero-section .text p,
-.hero-section .group .text p {
+.hero-section .text p {
     margin-top: 15px;
-    font-size: 30px !important;
+    font-size: 15px;
     padding: 0px;
     color: var(--text-color);
 }
@@ -844,19 +839,8 @@ footer p {
         justify-content: center
     }
 
-    .hero-section .text h2,
-    .hero-section .group .text h2 {
-        font-size: 70px !important;
-    }
-
-    .hero-section .text h3,
-    .hero-section .group .text h3 {
-        font-size: 30px !important;
-    }
-
-    .hero-section .text p,
-    .hero-section .group .text p {
-        font-size: 24px !important;
+    .hero-section .text h2 {
+        font-size: 35px;
     }
     
 
@@ -931,28 +915,15 @@ footer p {
     
       
     /*SECTION 1: Hero */
-    .hero-section .group .text h2,
-    .hero-section .text h2 {
+    .hero-section .group .text h2 {
         flex-direction: column-reverse;
         display: flex;
-        font-size: 80px !important;   
+        font-size: 40px;   
       }
     
-    .hero-section .group .text h2 .external-links i,
-    .hero-section .group .text h2 i,
-    .hero-section .text .external-links i {
-        font-size: 32px !important; /* Example: reducing icon size */
+    .hero-section .group .text h2 .external-links i {
+        font-size: 16px; /* Example: reducing icon size */
         margin: 0
-    }
-
-    .hero-section .text h3,
-    .hero-section .group .text h3 {
-        font-size: 28px !important;
-    }
-
-    .hero-section .text p,
-    .hero-section .group .text p {
-        font-size: 22px !important;
     }
 
     .arrow {
@@ -1019,25 +990,8 @@ footer p {
     .hero-section {
         padding: 0 20px
     }
-    .hero-section .text h2,
-    .hero-section .group .text h2 {
-        font-size: 60px !important;
-    }
-
-    .hero-section .text h3,
-    .hero-section .group .text h3 {
-        font-size: 24px !important;
-    }
-
-    .hero-section .text p,
-    .hero-section .group .text p {
-        font-size: 18px !important;
-    }
-
-    .hero-section .text .external-links i,
-    .hero-section .group .text .external-links i,
-    .hero-section .group .text h2 i {
-        font-size: 24px !important;
+    .hero-section .text h2 {
+        font-size: 30px
     }
 
     .hero-section .text .links a {
