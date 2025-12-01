@@ -232,9 +232,10 @@ nav.page-nav {
 /* SECTION 1: Hero */
 .hero-section {
     padding: 0 50px;
-    margin: 50px 0;
+    margin: 0;
     display: flex;  /* This makes .hero-section a flex container */
-
+    min-height: calc(100vh - 80px);  /* Fill remaining viewport height (accounting for navbar) */
+    align-items: center;  /* Center content vertically */
 
     border: 2px solid var(--border-color);
     border-image: linear-gradient(
@@ -251,6 +252,7 @@ nav.page-nav {
     padding: 0;
     gap: 40px;
     border-radius: 8px;
+    width: 100%;  /* Make sure group takes full width of hero section */
 }
 
 .hero-section .text {
