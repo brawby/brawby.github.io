@@ -27,8 +27,22 @@ body {
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
-    overflow: hidden;   /* removes scrollbars + disables scroll */
-    height: 100%;       /* prevents extra page height from forcing scroll */
+}
+
+/* Disable scrolling only on desktop/laptop (screens wider than tablet) */
+@media (min-width: 1025px) {
+    body {
+        overflow: hidden;   /* removes scrollbars + disables scroll on desktop */
+        height: 100%;       /* prevents extra page height from forcing scroll */
+    }
+}
+
+/* Enable scrolling on tablet and mobile */
+@media (max-width: 1024px) {
+    body {
+        overflow: auto;     /* allow scrolling on mobile/tablet */
+        height: auto;       /* allow content to expand naturally */
+    }
 }
 
 a {
@@ -880,6 +894,16 @@ footer p {
 
 }
 
+/* Tablet specific adjustments (enable scrolling, adjust heights) */
+@media (max-width: 1024px) {
+    /* SECTION 1: Hero - allow content to expand naturally */
+    .hero-section {
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
 
 @media (max-width: 768px) {
     /* NEVBAR*/
@@ -1339,6 +1363,25 @@ footer p {
   }
 }
 
+/* Tablet screens - enable scrolling and proper overflow */
+@media (max-width: 1024px) {
+  .education-section {
+    height: auto;
+    overflow: visible;
+    padding: 15px 0;
+  }
+  
+  .education-grid {
+    overflow: visible;
+    height: auto;
+  }
+  
+  .education-card.post-view {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
 @media (max-width: 768px) {
   .education-section {
     height: auto;
@@ -1526,6 +1569,25 @@ footer p {
   .achievements-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+  }
+}
+
+/* Tablet screens - enable scrolling and proper overflow */
+@media (max-width: 1024px) {
+  .achievements-section {
+    height: auto;
+    overflow: visible;
+    padding: 15px 0;
+  }
+  
+  .achievements-grid {
+    overflow: visible;
+    height: auto;
+  }
+  
+  .achievements-card.post-view {
+    max-height: none;
+    overflow: visible;
   }
 }
 

@@ -1,8 +1,28 @@
 // Idempotent helper that disables scrolling when any tab is activated.
+// Only applies on desktop screens (width > 1024px)
 // Usage: include this file with defer in your <head> so it runs after the DOM is parsed.
 (function () {
   if (window.__disableScrollScriptInstalled) return;
   window.__disableScrollScriptInstalled = true;
+
+  // Cache the mobile/tablet check result and update on resize
+  var _isMobileOrTablet = window.innerWidth <= 1024;
+  
+  function updateMobileCheck() {
+    _isMobileOrTablet = window.innerWidth <= 1024;
+  }
+  
+  // Update cached value on window resize (debounced)
+  var resizeTimeout;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(updateMobileCheck, 100);
+  }, { passive: true });
+
+  // Check if device is mobile/tablet (screen width <= 1024px)
+  function isMobileOrTablet() {
+    return _isMobileOrTablet;
+  }
 
   var TAB_SELECTORS = [
     '[role="tab"]',
@@ -23,6 +43,9 @@
   ].join(',');
 
   function applyNoScroll() {
+    // Don't apply on mobile/tablet
+    if (isMobileOrTablet()) return;
+    
     try {
       var els = [];
       // html and body

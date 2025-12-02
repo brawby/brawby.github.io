@@ -1,23 +1,40 @@
 /* Aggressive no-scroll styles (used with JS lock) */
-html, body {
-  height: 100%;
+/* Only apply on desktop (screens wider than 1024px) */
+@media (min-width: 1025px) {
+  html, body {
+    height: 100%;
+  }
+
+  /* Class used to mark elements we lock.
+     JS will also set inline styles on <body> to fix position at current scroll. */
+  .no-scroll-fixed {
+    overflow: hidden !important;
+    height: 100% !important;
+    /* Do not set position fixed in CSS because we need to set top to preserve scroll position via JS */
+  }
+
+  /* Hide scrollbar visuals just in case */
+  * {
+    scrollbar-width: none;    /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
 }
 
-/* Class used to mark elements we lock.
-   JS will also set inline styles on <body> to fix position at current scroll. */
-.no-scroll-fixed {
-  overflow: hidden !important;
-  height: 100% !important;
-  /* Do not set position fixed in CSS because we need to set top to preserve scroll position via JS */
-}
-
-/* Hide scrollbar visuals just in case */
-* {
-  scrollbar-width: none;    /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-  background: transparent;
+/* Allow scrolling on tablet and mobile (screens 1024px and below) */
+@media (max-width: 1024px) {
+  html, body {
+    height: auto;
+    overflow: auto;
+  }
+  
+  .no-scroll-fixed {
+    overflow: auto !important;
+    height: auto !important;
+    position: static !important;
+  }
 }
