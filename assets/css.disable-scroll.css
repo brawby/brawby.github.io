@@ -1,43 +1,26 @@
 /* Disable scrolling site-wide when .no-scroll is applied.
    WARNING: This will make overflowed content unreachable by scrolling.
-   Use with care. Only applies on desktop screens. */
-
-/* Only apply on desktop (screens wider than 1024px) */
-@media (min-width: 1025px) {
-  html, body {
-    height: 100%;
-  }
-
-  /* Apply to elements we explicitly toggle.
-     !important ensures CSS rules from other stylesheets won't easily override this. */
-  .no-scroll {
-    overflow: hidden !important;
-    height: 100% !important;
-  }
-
-  /* Hide native scrollbars for elements that might still have scroll behavior in some UAs */
-  * {
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* IE 10+ */
-  }
-
-  /* Chrome, Edge, Safari */
-  ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    background: transparent;
-  }
+   Use with care. */
+html, body {
+  height: 100%;
 }
 
-/* Allow scrolling on tablet and mobile (screens 1024px and below) */
-@media (max-width: 1024px) {
-  html, body {
-    height: auto;
-    overflow: auto;
-  }
-  
-  .no-scroll {
-    overflow: auto !important;
-    height: auto !important;
-  }
+/* Apply to elements we explicitly toggle.
+   !important ensures CSS rules from other stylesheets won't easily override this. */
+.no-scroll {
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+/* Hide native scrollbars for elements that might still have scroll behavior in some UAs */
+* {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
 }
