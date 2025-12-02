@@ -7,14 +7,6 @@
   overflow: visible;
 }
 
-/* Enable scrolling on tablet/mobile */
-@media (max-width: 1024px) {
-  .my-batch-section {
-    height: auto;
-    overflow: visible;
-  }
-}
-
 .batch-container {
   display: flex;
   align-items: flex-start;
