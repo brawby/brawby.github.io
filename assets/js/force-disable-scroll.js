@@ -1,11 +1,17 @@
 // Aggressive scroll lock triggered when any tab is clicked or activated.
 // Idempotent; once applied it blocks wheel/touch/keyboard and fixes page position.
+// Only applies on desktop screens (width > 1024px)
 //
 // Usage: include this file with defer in your <head> so it's ready when tabs are used.
 
 (function () {
   if (window.__forceDisableScrollInstalled) return;
   window.__forceDisableScrollInstalled = true;
+
+  // Check if device is mobile/tablet (screen width <= 1024px)
+  function isMobileOrTablet() {
+    return window.innerWidth <= 1024;
+  }
 
   var TAB_SELECTORS = [
     '[role="tab"]',
@@ -30,6 +36,9 @@
   var listeners = [];
 
   function prevent(e) {
+    // Skip prevention on mobile/tablet
+    if (isMobileOrTablet()) return;
+    
     // only prevent if cancelable
     if (e && e.cancelable) {
       try { e.preventDefault(); } catch (err) {}
@@ -37,6 +46,9 @@
   }
 
   function keyHandler(e) {
+    // Skip on mobile/tablet
+    if (isMobileOrTablet()) return;
+    
     // Allow modifier combos (Ctrl/Meta/Alt) to still work
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     var key = e.key || e.keyCode;
@@ -54,6 +66,9 @@
   }
 
   function enforcePosition() {
+    // Skip on mobile/tablet
+    if (isMobileOrTablet()) return;
+    
     // force back to locked position if anything tries to scroll
     try {
       window.scrollTo(0, lockedScrollY);
@@ -78,6 +93,9 @@
   }
 
   function applyLock() {
+    // Don't apply lock on mobile/tablet
+    if (isMobileOrTablet()) return;
+    
     if (locked) return;
     locked = true;
     lockedScrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
