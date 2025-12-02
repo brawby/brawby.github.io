@@ -29,7 +29,7 @@ body {
     margin: 0 auto;
 }
 
-/* Disable scrolling only on desktop/laptop (screens wider than 1024px) */
+/* Disable scrolling only on desktop/laptop (screens wider than tablet) */
 @media (min-width: 1025px) {
     body {
         overflow: hidden;   /* removes scrollbars + disables scroll on desktop */
@@ -37,7 +37,7 @@ body {
     }
 }
 
-/* Enable scrolling on tablet and mobile (screens 1024px and below) */
+/* Enable scrolling on tablet and mobile */
 @media (max-width: 1024px) {
     body {
         overflow: auto;     /* allow scrolling on mobile/tablet */
