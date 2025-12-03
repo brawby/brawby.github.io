@@ -88,23 +88,6 @@ nav .right a {
     margin-left: 30px;
 }
 
-nav .right a:last-child
- {
-    border: 2px solid var(--link-color);
-    color: var(--link-color);
-    padding: 3px 15px;
-    border-radius: 10px;
-}
-
-nav .right a:last-child:hover,
-nav .right a span:last-child:hover,
-nav .mobile-nav a:last-child:hover,
-nav .mobile-nav a span:last-child:hover,{
-    color: var(--text-color);
-    background-color: var(--light-background-color);
-    border-radius: 10px;
-}
-
 /* Navbar Mobile Menu Button */
 nav .menu-toggle {
     display: none;
