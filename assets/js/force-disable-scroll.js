@@ -150,6 +150,8 @@
     document.__forceDisableScrollListenersInstalled = true;
     document.addEventListener('click', onClick, { passive: true });
     document.addEventListener('keydown', onKeydown, { passive: true });
+    // MODIFIED: Apply scroll lock immediately on page load
+    applyLock();
   }
 
   if (document.readyState === 'loading') {
